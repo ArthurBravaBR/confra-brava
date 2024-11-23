@@ -7,7 +7,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightGray: "#dddfe9",
+        danger: "#e06964",
+        success: "#88C273",
+      },
+      fontSize: {
+        textTitle: "1.5rem",
+        textSubtitle: "1.2rem",
+      },
+    },
   },
   plugins: [],
 };
