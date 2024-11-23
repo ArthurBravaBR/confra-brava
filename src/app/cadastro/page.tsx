@@ -4,11 +4,7 @@ import { supabaseBrowserClient } from "@utils/supabase/client";
 import { redirect } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-export default function BBCadastro({
-  onSubmit,
-}: {
-  onSubmit: (data: any) => void;
-}) {
+export default function BBCadastro() {
   const [formData, setFormData] = useState({
     email: "",
     nomecompleto: "",
