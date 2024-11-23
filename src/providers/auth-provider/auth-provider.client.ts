@@ -49,7 +49,7 @@ export const authProviderClient: AuthProvider = {
 
     return {
       success: true,
-      redirectTo: "/login",
+      redirectTo: "/cadastro",
     };
   },
   register: async ({ email, password }) => {
@@ -94,7 +94,7 @@ export const authProviderClient: AuthProvider = {
     if (error) {
       return {
         authenticated: false,
-        redirectTo: "/login",
+        redirectTo: "/cadastro",
         logout: true,
       };
     }
@@ -107,7 +107,7 @@ export const authProviderClient: AuthProvider = {
 
     return {
       authenticated: false,
-      redirectTo: "/login",
+      redirectTo: "/cadastro",
     };
   },
   getPermissions: async () => {

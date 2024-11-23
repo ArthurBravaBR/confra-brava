@@ -10,7 +10,7 @@ export const authProviderServer: Pick<AuthProvider, "check"> = {
       return {
         authenticated: false,
         logout: true,
-        redirectTo: "/login",
+        redirectTo: "/cadastro",
       };
     }
 
@@ -23,7 +23,7 @@ export const authProviderServer: Pick<AuthProvider, "check"> = {
     return {
       authenticated: false,
       logout: true,
-      redirectTo: "/login",
+      redirectTo: "/cadastro",
     };
   },
 };
