@@ -81,7 +81,7 @@
   }
 
   .menu {
-    @apply flex-shrink-0 p-2 pr-4 border-r border-gray-300  flex flex-col justify-between;
+    @apply flex-shrink-0 border-r border-gray-300;
   }
 
   .menu a {
@@ -96,9 +96,5 @@
     .menu {
       @apply border-r-0 border-b border-gray-300;
     }
-  }
-
-  .menu ul {
-    @apply pl-4;
   }
 }
