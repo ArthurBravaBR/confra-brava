@@ -75,7 +75,7 @@ export default function Participantes() {
   }, []);
 
   if (loading) {
-    return <p className="text-center mt-4">Carregando....</p>;
+    return <p className="text-center mt-4">Carregando...</p>;
   }
 
   if (error) {
