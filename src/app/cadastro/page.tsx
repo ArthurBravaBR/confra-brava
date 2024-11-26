@@ -46,6 +46,11 @@ export default function BBCadastro() {
         alert("Erro ao cadastrar participante.");
       } else {
         alert("Participante cadastrado com sucesso!");
+        setFormData({
+          email: "",
+          nomecompleto: "",
+          relacionamento: "colaborador",
+        });
       }
     } catch (err) {
       console.error("Erro inesperado:", err);
