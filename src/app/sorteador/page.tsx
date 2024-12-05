@@ -36,7 +36,8 @@ export default function Sorteio() {
         .from("participantes")
         .select("*")
         .eq("status", true)
-        .is("sorted", false);
+        .is("sorted", false)
+        .eq("relacionamento", "colaborador");
 
     const { data: winners, error: winnersError } = await supabaseBrowserClient
       .from("participantes")
@@ -60,7 +61,7 @@ export default function Sorteio() {
     setLoading(false);
   };
 
-  const [test, setTest] = useState();
+  const [test, setTest] = useState("");
 
   console.log(test);
 
