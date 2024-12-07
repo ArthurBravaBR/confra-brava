@@ -95,6 +95,7 @@ export default function BBCadastro() {
         id="form-section"
         className="w-full lg:w-1/2 flex flex-col justify-center items-center bg-gray-100 px-4 py-12"
       >
+        <h1 className="text-red-600">CADASTRO ENCERRADO!!!</h1>
         <form
           onSubmit={handleSubmit}
           className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md"
@@ -159,12 +160,12 @@ export default function BBCadastro() {
             </select>
           </div>
 
-          <button
+          {/* <button
             type="submit"
             className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
-            Cadastrar
-          </button>
+             Cadastrar 
+          </button>*/}
         </form>
         <div className="cursor-pointer pt-20" onClick={() => handleClick()}>
           <button type="button">admin</button>
